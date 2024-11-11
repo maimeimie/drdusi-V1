@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="box">
+        <img src="drtest/image/DR.DUSI-removebg-preview.png" class="logo">
+    <form action="loginidcard.php" method="POST">
+        <div class="box">
+            <input type="text" name="id_card" class="input-field" placeholder="สแกนบัตรประจำตัวของคุณ ..." required>
+        </div>
+    </form>
+    <script>
+        const inputField = document.querySelector('.input-field');
+        function keepFocus() {
+            inputField.focus();
+        }
+        function clearInputAfterDelay(delay) {
+            setTimeout(() => {
+                inputField.value = '';
+                inputField.focus();
+            }, delay);
+        }
+        setInterval(keepFocus, 100);
+        clearInputAfterDelay(100);
+    </script>
+</body>
+</html>

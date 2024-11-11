@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #f0f0f0; /* สีพื้นหลังของหน้า */
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center; 
+    padding: 30px;
+    background: #fff; 
+    border-radius: 30px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.centered-id {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.two-columns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px; 
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; 
+    width: 100%;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+.input-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.submit-btn {
+    width: auto;
+    padding: 20px 30px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #003f82;
+}
+
+.login-header {
+    text-align: center; 
+    margin-bottom: -40px; 
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+}
